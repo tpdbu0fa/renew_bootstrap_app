@@ -1,0 +1,16 @@
+<%= render partial: 'layouts/breadcrumb' %>
+<p id="notice"><%= notice %></p>
+<div class="box col-md-8 col-xs-12 bg-info" style="height: 500px;">
+  <p>
+    <strong>Name:</strong>
+    <%= @post.name %>
+  </p>
+
+  <p>
+    <strong>Memo:</strong>
+    <%= @post.memo %>
+  </p>
+
+  <%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to 'Back', posts_path %>
+</div>

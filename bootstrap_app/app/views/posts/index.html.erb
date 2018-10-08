@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<!-- grid -->
+<div class="box col-md-8 col-xs-12 bg-info">
+<h1>Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <div class="col-md-12">
+        <tr>
+          <td><h2><%= post.name %></h2>
+          <br>
+          <%= post.memo %>
+            <br>
+            <!-- プログレスバー -->
+           <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                70%
+              </div>
+           </div>
+          </td>
+        </tr>
+      </div>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+</div>
